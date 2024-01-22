@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="302dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Get it"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="RD Publisher"
+                android:layout_below="@+id/textView1"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="$20"
+                android:layout_below="@+id/textView2"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="ur"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/textView3"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

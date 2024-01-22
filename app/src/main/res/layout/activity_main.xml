@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book Details"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/bookName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Book name: "
+        android:padding="8dp"
+        android:layout_alignTop="@id/textview"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the book id: "
+        android:padding="8dp"
+        android:layout_alignTop="@id/bookName"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/Author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the author name: "
+        android:padding="8dp"
+        android:layout_alignTop="@id/Id"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/white" />
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter year of publication: "
+        android:padding="8dp"
+        android:layout_alignTop="@id/Author"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/Upload"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:layout_alignTop="@id/year"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="409dp"
+                android:layout_height="729dp"
+                android:id="@+id/recycleview"
+                android:layout_below="@+id/Upload"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>
